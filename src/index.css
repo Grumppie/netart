@@ -1,15 +1,356 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #282c34;
-  color: white;
+  background-image: linear-gradient(white, rgba(246, 246, 47, 0.438));
+  color: black;
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  overflow-x: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 8em;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+
+.award {
+  height: 850px;
+}
+
+.information {
+  flex-basis: 60%;
+}
+
+.title {
+  position: relative;
+  font-weight: bold;
+}
+
+.info-list h3 {
+  font-size: 1.27em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.felicitation {
+  height: 600px;
+}
+
+.felicitation-description {
+  font-size: 1.27em;
+  font-weight: 500;
+}
+
+.award-name {
+  font-weight: bold;
+}
+
+.products-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.achievement-info,
+.products-description {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  padding: 0 0.5em;
+}
+
+.products {
+  width: 80%;
+}
+
+.products-end {
+  background-color: red;
+  height: 3px;
+  width: 95%;
+}
+
+footer {
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.services {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.footer-divider {
+  color: red;
+}
+
+.socials {
+  height: 150px;
+  background-color: red;
+  margin: 0.5em;
+}
+
+.socials-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5em;
+}
+
+.socials-links {
+  list-style-type: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.socials-info {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.socials-number {
+  font-weight: bold;
+}
+
+.phone-icon {
+  height: 30px;
+  margin-right: 0.5em;
+}
+
+.facebook-icon {
+  height: 35px;
+  margin-right: 0.5em;
+}
+
+@media screen and (max-width: 1300px) and (min-width:1177px) {
+  .award {
+    height: 600px;
+    position: relative;
+    bottom: -50px;
+  }
+
+  .felicitation {
+    height: 500px;
+  }
+
+  .title,
+  .info-list h3,
+  .felicitation-description,
+  .achievement-info,
+  .products-description,
+  .footer-title,
+  .services,
+  .socials-info,
+  .socials-links {
+    font-size: 1em;
+  }
+
+  .logo {
+    height: 7em;
+  }
+
+}
+
+@media screen and (max-width: 1176px) and (min-width: 944px) {
+  .award {
+    height: 400px;
+    position: relative;
+    bottom: -50px;
+  }
+
+  .felicitation {
+    height: 400px;
+  }
+
+  .title,
+  .info-list h3,
+  .felicitation-description,
+  .achievement-info,
+  .products-description,
+  .footer-title,
+  .services,
+  .socials-info,
+  .socials-links {
+    font-size: 1em;
+  }
+
+  .logo {
+    height: 7em;
+  }
+}
+
+@media screen and (max-width: 944px) and (min-width: 785px) {
+  .award {
+    height: 300px;
+    position: relative;
+    bottom: -50px;
+  }
+
+  .felicitation {
+    height: 300px;
+  }
+
+  .title,
+  .info-list h3,
+  .felicitation-description,
+  .achievement-info,
+  .products-description,
+  .footer-title,
+  .services,
+  .socials-info,
+  .socials-links {
+    font-size: 0.9em;
+  }
+
+  .logo {
+    height: 5em;
+  }
+}
+
+@media screen and (max-width: 784px) and (min-width: 600px) {
+  .award {
+    height: 250px;
+    position: relative;
+    bottom: -50px;
+  }
+
+  .felicitation {
+    height: 250px;
+  }
+
+  .title,
+  .info-list h3,
+  .felicitation-description,
+  .achievement-info,
+  .products-description,
+  .footer-title,
+  .services,
+  .socials-info,
+  .socials-links {
+    font-size: 0.8em;
+  }
+
+  .socials-list {
+    padding: 0 1em;
+  }
+
+  .phone-icon {
+    height: 20px;
+  }
+
+  .facebook-icon {
+    height: 25px;
+  }
+
+  .logo {
+    height: 5em;
+  }
+}
+
+@media screen and (max-width: 599px) and (min-width: 490px) {
+  .award {
+    height: 200px;
+    position: relative;
+    bottom: -50px;
+
+  }
+
+  .felicitation {
+    height: 200px;
+  }
+
+  .title,
+  .info-list h3,
+  .felicitation-description,
+  .achievement-info,
+  .products-description,
+  .footer-title,
+  .services,
+  .socials-info,
+  .socials-links {
+    font-size: 0.7em;
+  }
+
+  .socials-list {
+    padding: 0 1em;
+  }
+
+  .phone-icon {
+    height: 15px;
+  }
+
+  .facebook-icon {
+    height: 20px;
+  }
+
+  .logo {
+    height: 3em;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  .award {
+    height: 150px;
+    position: relative;
+    bottom: -30px;
+  }
+
+  .felicitation {
+    height: 150px;
+  }
+
+  .title,
+  .info-list h3,
+  .felicitation-description,
+  .achievement-info,
+  .products-description,
+  .footer-title,
+  .services,
+  .socials-info,
+  .socials-links {
+    font-size: 0.6em;
+  }
+
+  .socials-list {
+    padding: 0 1em;
+  }
+
+  ul {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .phone-icon {
+    height: 10px;
+  }
+
+  .facebook-icon {
+    height: 15px;
+  }
+
+  .logo {
+    height: 3em;
+  }
 }
